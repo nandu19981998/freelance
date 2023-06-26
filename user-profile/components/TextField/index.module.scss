@@ -1,0 +1,29 @@
+.inputContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5px;
+
+    input {
+        width: 100%;
+        min-height: 48px;
+        border: 1px solid #D0D5DD;
+        border-radius: 8px;
+        padding-left: 8px;
+        font-size: 14px;
+        &::placeholder {
+            color: #ccc;
+        }
+        &:focus, &:active {
+            outline: 0;
+        }
+    }
+    label {
+        font-size: 14px;
+        color: #344054;
+    }
+    span{
+        color: red;
+        margin: 0;
+        font-size: 12px;
+    }
+}
