@@ -1,25 +1,24 @@
 import React, {useEffect, useState} from 'react'
 import styles from './index.module.scss'
 import UserTile from '../components/UserTile'
-import mockData from '../mock.json';
 import axios from 'axios'
-import {Head} from 'next/document'
 
 const Dashboard = () => {
 
-  // const [candidates, setCandidates] = useState([]); 
-  // useEffect(() => {
-  //   async function getCandidates() {
-  //       const {data} = await axios.get('/api/user');
-  //       setCandidates(data)
-  //   };
-  //   getCandidates();
-  // }, []);
+  const [candidates, setCandidates] = useState([]); 
+  useEffect(() => {
+    async function getCandidates() {
+        const response = await axios.get('/api/user');
+        console.log(response.data.data)
+        setCandidates(response.data.data)
+    };
+    getCandidates();
+  }, []);
 
   return <main className={styles.mainContainer}>
             <h2>Candidate Profiles</h2>
             <div className={styles.tileContainer}>
-              {mockData.map((user, index) => (
+              {candidates.map((user, index) => (
                 <UserTile key={index+user?.name} userDetails={user} />
               ))}
               <UserTile create/>
