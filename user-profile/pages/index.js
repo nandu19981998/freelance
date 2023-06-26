@@ -3,6 +3,7 @@ import styles from './index.module.scss'
 import UserTile from '../components/UserTile'
 import mockData from '../mock.json';
 import axios from 'axios'
+import {Head} from 'next/document'
 
 const Dashboard = () => {
 
