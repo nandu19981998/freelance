@@ -9,7 +9,7 @@ const UserTile = ({userDetails, create=false}) => {
     const {gender, name, email,age, country, city, phone} = userDetails || {};
     return !create ? <section className={styles.tileContainer}>
                     <div className={styles.imageContainer}>
-                    {gender === "female" ? 
+                    {gender === "Female" ? 
                     <img src='/Avatar.svg' alt="User Image"/> : <img src='/Avatar1.svg' alt="User Image"/>}
                     <div className={styles.detailsContainer}>
                         <h3>{name}</h3>
