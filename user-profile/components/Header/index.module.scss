@@ -1,0 +1,48 @@
+.header {
+    width: 100%;
+    min-height: 50px;
+    padding: 10px 42px;
+    background: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 1px 0px 0px #12203B17;;
+
+    .searchContainer {
+        flex: 2;
+    }
+
+    .demoContainer {
+        flex: 1;
+        display: flex;
+        gap: 12px;
+
+        img {
+            cursor: pointer;
+        }
+    }
+
+    .accountContainer{
+        flex: 1;
+        display: flex;
+        gap: 24px;
+        justify-content: flex-end;
+        align-items: center;
+        .mail {
+            position: relative;
+            span {
+                display: inline-block;
+                position: relative;
+                border-radius: 50%;
+                background: #4F46E5;
+                font-size: 12px;
+                width: 17px;
+                height: 17px;
+                text-align: center;
+                top: -16px;
+                right: 12px;
+            }
+        }
+    }
+}

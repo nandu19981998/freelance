@@ -1,0 +1,57 @@
+.createContainer{
+    margin: 60px 120px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    height: 100%;
+    gap: 80px;
+    align-items: flex-start;
+
+        .profileContainer {
+            flex-grow: 0;
+            flex-shrink: 0;
+            max-height: 494px;
+            flex:1;
+            .heading{
+                font-size: 48px !important;
+                font-weight: 600;
+                color: #101828;
+            }
+            .description {
+                color: #667085;
+                font-size: 20px;
+            }
+            .userContainer {
+                max-width: 382px;
+            }
+        }
+
+        .formContainer{
+            flex: 1;
+            background: #fff;
+            padding: 43px 27px;
+            border-radius: 10px;
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 18px;
+
+            .firstRow{
+                display: flex;
+                flex-flow: row wrap;
+                gap:32px;
+                & > div {
+                    flex: 1;
+                }
+            }
+                .secondRow {
+                    display: flex;
+                    flex-flow: row wrap;
+                    gap: 32px;
+
+                    &>div {
+                        flex: 1;
+                    }
+                }
+        }
+
+}
