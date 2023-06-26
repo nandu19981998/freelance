@@ -13,7 +13,8 @@ const UserTile = ({userDetails, create=false}) => {
                     <img src='/Avatar.svg' alt="User Image"/> : <img src='/Avatar1.svg' alt="User Image"/>}
                     <div className={styles.detailsContainer}>
                         <h3>{name}</h3>
-                        <p  >{`Age : ${age}   Gender : ${gender}`}</p>
+                        <p>{`Age : ${age}`}</p>
+                        <p>{`Gender : ${gender}`}</p>
                     </div>
                 </div>
                 <p>
