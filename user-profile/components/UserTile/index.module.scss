@@ -8,7 +8,7 @@
 
     .imageContainer {
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: row nowrap;
         gap: 12px;
         padding-bottom: 8px;
         border-bottom: 1px solid #CBCBCB;

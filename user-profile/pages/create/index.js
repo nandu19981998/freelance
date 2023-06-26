@@ -130,7 +130,7 @@ const Create = () => {
                 </div>
                 <form className={styles.formContainer} onSubmit={handleSubmit}>
                     <div className={styles.firstRow}>
-                        <TextField errorStatus={formData.name} name="name" label="First name" placeholder="First name" onChange={handleOnChange} />
+                        <TextField errorStatus={formData.name} name="name" label="Full name" placeholder="Full name" onChange={handleOnChange} />
                         <SelectInput errorStatus={formData.gender} name="gender" label="Gender" options={["Male", "Female"]} onChange={handleOnChange}/>
                     </div>
                     <div className={styles.secondRow}>
